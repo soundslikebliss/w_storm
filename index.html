@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="wirestorm">
+<head>
+	<meta charset="UTF-8">
+	<title>Wirestorm</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/superhero/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="row" style="padding: 6rem;">
+
+			<div class="col-md-6">
+				<product-list></product-list>
+				<product_form></product_form>
+			</div>
+
+			<div class="col-md-6">
+				<single-product></single-product>
+			</div>
+	
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="services/product.js"></script>
+	<script src="directives/productList.js"></script>
+	<script src="directives/productForm.js"></script>
+	<script src="directives/singleProduct.js"></script>
+</body>
+</html>
