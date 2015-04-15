@@ -3,6 +3,7 @@ app.service('Product', ['$http', function($http) {
 	var product = this;
 
 	product.activeItem = [];
+	product.cart = [];
 
 	product.isFull = function() {
 		if (product.activeItem.length > 0)
@@ -10,10 +11,20 @@ app.service('Product', ['$http', function($http) {
 	};
 
 	product.all_products = [
-		{ 	item: 'milk',
-			description: 'from a cow',
-			price: 4,
-			comments: ["I love it"]
+		{ 	item: 'iron man',
+			description: 'vol 1, issue 1',
+			price: 3,
+			comments: ["Tony Stark 4 President"]
+		},
+		{	item: 'batman',
+			description: 'vol 20, issue 100',
+			price: 3,
+			comments: ["the dark knight!"]
+		},
+		{	item: 'spider man',
+			description: 'vol 5, issue 22',
+			price: 2.50,
+			comments: ["with great power..."]
 		}
 	];
 

@@ -1,1 +1,1 @@
-var app = angular.module('wirestorm', []);
+var app = angular.module('wirestorm', ['ngSanitize', 'adaptv.adaptStrap']);

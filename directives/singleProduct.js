@@ -4,7 +4,7 @@ app.directive('singleProduct', function() {
 		scope: {},
 		template: 
 
-			'<h2>Chosen product</h2><hr><p ng-repeat="i in activeItem">Item: {{i.item}}<br>Description: {{i.description}}<br>Price: ${{i.price}}</p><div ng-repeat="i in activeItem">Comments: <p ng-repeat="i in i.comments track by $index">{{i}}</p></div><br><form ng-show="isFull()"><input type="text" name="comment" ng-model="productComment"></form><button ng-show="isFull()" style="color:black; margin: 1rem;" ng-click="addComment()">Add a comment</button>',
+			'<p ng-repeat="i in activeItem">Item: {{i.item}}<br>Description: {{i.description}}<br>Price: ${{i.price}}</p><div ng-repeat="i in activeItem">Notes: <p ng-repeat="i in i.comments track by $index">{{i}}</p></div><br><form ng-show="isFull()"><input type="text" name="comment" ng-model="productComment"></form><button ng-show="isFull()" style="color:black; margin: 1rem;" ng-click="addComment()">Add a note</button>',
 
 		controller: ['$scope', 'Product', function($scope, product) {
 
