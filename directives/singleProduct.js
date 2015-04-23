@@ -16,7 +16,7 @@ app.directive('singleProduct', function() {
 				var comment = $scope.productComment;
 				console.log(comment);
 				$scope.activeItem[0].comments.push(comment);
-
+				$scope.productComment = '';
 			}
 		}]
 	};
