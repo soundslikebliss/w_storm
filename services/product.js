@@ -5,6 +5,7 @@ app.service('Product', ['$http', function($http) {
 	product.activeItem = [];
 	product.cart = [];
 	product.total_cost = 0;
+	product.updated = -1;
 
 	product.isFull = function() {
 		if (product.activeItem.length > 0)
@@ -33,20 +34,14 @@ app.service('Product', ['$http', function($http) {
 	product.getSingleItem = function(x) {
 		product.activeItem.length = 0;
 		product.activeItem.push(x);
-		console.log(product.activeItem[0].comments);
 		console.log(product.activeItem[0]);
 	};
 
+
 	product.onDrop = function(x) {
 		product.cart.push(x);
-		console.log(product.cart);
 	};
 
-	product.add_cost = function() {
-		for (i = 0; i < product.all_products.length; i++) {
-			product.total_cost = product.total_cost + product.all_products[i].price;
-		};
-		console.log(product.total_cost);
-	};
+	
 
 }]);
