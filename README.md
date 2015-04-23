@@ -1,5 +1,8 @@
-##Comic Book Shopper
-
+#Comic Book Shopper
+##(AngularJS)
+##Custom Directives
+##Common Service Model
+###Drag and Drop functionality
 
 ###Add comics to a wishlist (via form)
 ###Drag and drop comics from wishlist to cart
