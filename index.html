@@ -2,24 +2,25 @@
 <html ng-app="wirestorm">
 <head>
 	<meta charset="UTF-8">
-	<title>Wirestorm</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/superhero/bootstrap.min.css">
+	<title>Comics!</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/yeti/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="adapt-strap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-	<div style="text-align: center">
-		<h1 style="padding-bottom: 2rem;">Comic Book Shopper!</h1>
-		<hr>
+	<div style="text-align: left">
+		<h1 style="padding-bottom: 4rem; font-family: 'Libre Baskerville', serif;">Comic Book Shopper!</h1>
 	</div>
 
 
 	<div class="row" style="padding: 1rem">		
 		<div class="col-md-4">
 			<product_form></product_form>
+
 			<h3>Comic details</h3>
-				<div class="panel panel-default">
-					<div class="panel-body">
+				<div>
+					<div>
 						<single-product></single-product>
 					</div>
 				</div>

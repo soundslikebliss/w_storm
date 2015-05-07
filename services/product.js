@@ -15,7 +15,7 @@ app.service('Product', ['$http', function($http) {
 	product.all_products = [
 		{ 	item: 'iron man',
 			description: 'vol 1, issue 1',
-			price: 3,
+			price: 4,
 			comments: ["Tony Stark 4 President"]
 		},
 		{	item: 'batman',
@@ -25,8 +25,13 @@ app.service('Product', ['$http', function($http) {
 		},
 		{	item: 'spider man',
 			description: 'vol 5, issue 22',
-			price: 2.50,
+			price: 4,
 			comments: ["with great power..."]
+		},
+		{	item: 'swamp thing',
+			description: 'vol 6, issue 25',
+			price: 3,
+			comments: ["scott snyder writing!"]
 		}
 	];
 

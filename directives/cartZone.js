@@ -2,7 +2,7 @@ app.directive('cartZone', function(){
 	return {
 		restrict: 'E',
 		scope: {},
-		template: '<h3>Cart</h3><div class="panel panel-default"><div class="panel-body" style="padding: 30px;" ad-drop="true" ad-drop-end="onDrop($data, $dragElement, $dropElement, $event);">drop here!!</div></div><button type="button" class="btn btn-success" style="margin: 2px;" ng-repeat="i in cart track by $index" ng-click="getSingleItem(i);">{{i.item}}</button><hr><h4><h3>Total: $<strong>{{total_cost}}</strong></h3></h4>updated: {{updated}}',
+		template: '<h3>Cart</h3><div class="panel panel-default"><div class="panel-body" style="padding: 30px;" ad-drop="true" ad-drop-end="onDrop($data, $dragElement, $dropElement, $event);"><strong><p>drop here!!</p></strong></div></div><button type="button" class="btn btn-warning" style="margin: 2px;" ng-repeat="i in cart track by $index" ng-click="getSingleItem(i);">{{i.item}}</button><hr><h4><h3>Total: $<strong>{{total_cost}}</strong></h3></h4>updated: {{updated}}',
 
 		controller: ['$scope', 'Product', function($scope, product) {
 			$scope.cart = product.cart;
