@@ -6,6 +6,8 @@ app.directive('cartZone', function(){
 
 		controller: ['$scope', 'Product', function($scope, product) {
 			$scope.cart = product.cart;
+
+
 			$scope.onDrop = product.onDrop;
 			$scope.getSingleItem = product.getSingleItem;
 			$scope.updated = product.updated;

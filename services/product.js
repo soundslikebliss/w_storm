@@ -4,6 +4,8 @@ app.service('Product', ['$http', function($http) {
 
 	product.activeItem = [];
 	product.cart = [];
+
+
 	product.total_cost = 0;
 	product.updated = -1;
 
@@ -35,6 +37,12 @@ app.service('Product', ['$http', function($http) {
 		}
 	];
 
+	product.remove = function(l, o) {
+	    var index = l.indexOf(o);
+	    if (index > -1) {
+	      l.splice(index, 1);
+	    }
+	  };
 
 	product.getSingleItem = function(x) {
 		product.activeItem.length = 0;
@@ -45,6 +53,7 @@ app.service('Product', ['$http', function($http) {
 
 	product.onDrop = function(x) {
 		product.cart.push(x);
+		product.remove(product.all_products, x);
 	};
 
 	
